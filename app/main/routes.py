@@ -9,7 +9,9 @@ from app.main.forms import EditProfileForm, EmptyForm, PostForm, SearchForm, Mes
 from app.models import User, Post, Message, Notification
 from app.translate import translate
 from app.main import bp
+import logging
 
+log = logging.getLogger(__name__)
 
 @bp.before_app_request
 def before_request():
